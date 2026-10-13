@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="962-BU-2Vy">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="962-BU-2Vy">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController title="Entry Card" modalTransitionStyle="crossDissolve" id="962-BU-2Vy" userLabel="Root" customClass="RootViewController" customModule="Entry_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="InY-8a-euu">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="0el-m1-1SQ"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
@@ -30,17 +30,17 @@
             <objects>
                 <viewController storyboardIdentifier="Main View Controller" title="Main" modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="BYZ-38-t0r" userLabel="Main Screen" customClass="MainViewController" customModule="Entry_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iBH-2u-CUx" userLabel="Page View">
-                                <rect key="frame" x="0.0" y="47" width="428" height="845"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <connections>
                                     <segue destination="6Xa-yZ-P8b" kind="embed" identifier="Page View Controller embedded segue" id="yuu-oF-1cp"/>
                                 </connections>
                             </containerView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gg-d0-g0Z">
-                                <rect key="frame" x="370" y="55" width="50" height="50"/>
+                                <rect key="frame" x="317" y="28" width="50" height="50"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fYg-A9-Q1h">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtt-o9-goL" userLabel="Settings Button">
-                                <rect key="frame" x="370" y="55" width="50" height="50"/>
+                                <rect key="frame" x="317" y="28" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Nsr-ki-Bab"/>
                                     <constraint firstAttribute="width" constant="50" id="icL-wF-XXL"/>
@@ -92,15 +92,26 @@
                         <constraints>
                             <constraint firstItem="iBH-2u-CUx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3GO-d7-ntJ"/>
                             <constraint firstItem="iBH-2u-CUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9KZ-wW-uQP"/>
-                            <constraint firstItem="iBH-2u-CUx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GvD-YH-as1"/>
+                            <constraint firstItem="iBH-2u-CUx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GvD-YH-as1">
+                                <variation key="heightClass=compact" constant="-16"/>
+                            </constraint>
                             <constraint firstItem="iBH-2u-CUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fBV-xM-9UU"/>
-                            <constraint firstItem="Rtt-o9-goL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-8" id="gtx-I5-gpI"/>
-                            <constraint firstItem="Rtt-o9-goL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="hfT-ze-EMv"/>
+                            <constraint firstItem="Rtt-o9-goL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-8" id="gtx-I5-gpI">
+                                <variation key="heightClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstItem="Rtt-o9-goL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="hfT-ze-EMv">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="4gg-d0-g0Z" firstAttribute="centerX" secondItem="Rtt-o9-goL" secondAttribute="centerX" id="ipg-ml-RuF"/>
                             <constraint firstItem="4gg-d0-g0Z" firstAttribute="centerY" secondItem="Rtt-o9-goL" secondAttribute="centerY" id="jy6-q4-jLc"/>
                             <constraint firstItem="4gg-d0-g0Z" firstAttribute="width" secondItem="Rtt-o9-goL" secondAttribute="width" id="keP-NN-njy"/>
                             <constraint firstItem="4gg-d0-g0Z" firstAttribute="height" secondItem="Rtt-o9-goL" secondAttribute="height" id="l92-9V-hn4"/>
                         </constraints>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="gtx-I5-gpI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="fmN-0g-B3I"/>
                 </viewController>
@@ -129,7 +140,7 @@
             <objects>
                 <viewController storyboardIdentifier="Empty Picture View Controller" id="yNp-iP-oIz" userLabel="Empty Picture" sceneMemberID="viewController">
                     <imageView key="view" opaque="NO" contentMode="center" image="Empty Picture" id="X71-7w-lUE">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Fe2-Tw-Jog"/>
                         <gestureRecognizers/>
@@ -152,11 +163,11 @@
             <objects>
                 <viewController storyboardIdentifier="Loaded Picture View Controller" title="Image" id="L3j-I9-ZBD" userLabel="Loaded Picture View Controller" customClass="LoadedPictureViewController" customModule="Entry_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QeR-M3-nyu" customClass="LoadedPictureView" customModule="Entry_Card" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhA-6L-GOS" userLabel="Scroll View">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="918"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="659"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="400" placeholderIntrinsicHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="FTe-Pz-zff" userLabel="Image View">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
@@ -195,18 +206,18 @@
             <objects>
                 <viewController storyboardIdentifier="Lock Screen View Controller" title="Lock" modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="H1U-4u-JvA" userLabel="Lock Screen" customClass="LockViewController" customModule="Entry_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cim-cm-b3J">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="LtQ-7N-VGl">
-                                <rect key="frame" x="107" y="258.33333333333337" width="214" height="422.33333333333337"/>
+                                <rect key="frame" x="94" y="182" width="187.5" height="323.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="QJj-UI-Taa">
-                                        <rect key="frame" x="0.0" y="0.0" width="214" height="334.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="235.5"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to unlock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VdG-8U-nyf">
-                                        <rect key="frame" x="0.0" y="374.33333333333331" width="214" height="48"/>
+                                        <rect key="frame" x="0.0" y="275.5" width="187.5" height="48"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -253,13 +264,13 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="separatorColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
