@@ -29,7 +29,7 @@
 	<key>NSFaceIDUsageDescription</key>
 	<string>Your cards will be displayed after you unlock your device.</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>© 2023 Stephen Lardieri</string>
+	<string>© 2026 Stephen Lardieri</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Select pictures you have already taken of your card.</string>
 	<key>UIApplicationSceneManifest</key>
